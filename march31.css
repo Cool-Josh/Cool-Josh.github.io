@@ -1,0 +1,157 @@
+/*This code is a mess. Sorry.*/
+
+#object1{
+    background-color: rgba(255, 60, 0, 0.637);
+    position:absolute; top: 50px;
+    height: 90px;
+    width: 100%;
+    z-index: -1;
+}
+#object2{
+    background-color: goldenrod;
+    position:absolute; top: 720px;
+    height: 50px;
+    width: 100%;
+    z-index: -1;
+}
+
+#object3{
+    background-color: goldenrod;
+    position:absolute; top: 1820px;
+    height: 50px;
+    width: 100%;
+    z-index: -1;
+}
+
+#paragraph1{
+    color:rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+}
+
+#paragraph2, #paragraph3{
+    width: 1000px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#paragraph4, #paragraph5{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+}
+
+#standard, #modern, #legacy, #edh, #sealed, #draft{
+    color: rgb(95, 117, 114);
+    font-size: 20px;
+}
+
+#legacyp, #edhp, #sealedp, #draftp{
+    border-style: solid;
+    border-width: 2px;
+    width: 600px;
+    border-color: rgb(231, 170, 0);
+}
+
+#paragraph1{
+    position:absolute; left: 120px;
+}
+
+#thalia{
+    position:absolute; top: 800px; left: 629px;
+}
+#bolt{
+    position:absolute; top: 1050px; left: 821px;
+}
+#brainstorm{
+    position:absolute; top: 1300px; left: 629px;
+}
+#tower{
+    position:absolute; top: 1550px; left: 821px;
+}
+#draftimg{
+    position:absolute; top: 1905px; left: 621px;
+}
+#sealedimg{
+    position:absolute; top: 2155px; left: 771px;
+}
+
+
+#standardp{
+    border-style: solid;
+    border-width: 2px;
+    padding-right: 182px;
+    padding-top: 50px;
+    width: 600px;
+    position:absolute; top: 795px;
+    border-color: rgb(231, 170, 0);
+}
+#modernp{
+    border-style: solid;
+    border-width: 2px;
+    padding-right: 182px;
+    padding-top: 50px;
+    width: 600px;
+    position:absolute; top: 1045px; left: 200px;
+    border-color: rgb(231, 170, 0);
+}
+#legacyp{
+    border-style: solid;
+    border-width: 2px;
+    padding-right: 182px;
+    padding-top: 50px;
+    width: 600px;
+    position:absolute; top: 1295px;
+    border-color: rgb(231, 170, 0);
+}
+#edhp{
+    border-style: solid;
+    border-width: 2px;
+    padding-right: 182px;
+    padding-top: 50px;
+    width: 600px;
+    position:absolute; top: 1545px; left: 200px;
+    border-color: rgb(231, 170, 0);
+}
+#draftp{
+    border-style: solid;
+    border-width: 2px;
+    padding-top: 50px;
+    padding-right: 315px;
+    width: 600px;
+    position:absolute; top: 1900px;
+    border-color: rgb(231, 170, 0);
+}
+#sealedp{
+    border-style: solid;
+    border-width: 2px;
+    padding-top: 50px;
+    padding-right: 272px;
+    width: 600px;
+    position:absolute; top: 2150px; left: 200px;
+    border-color: rgb(231, 170, 0);
+}
+
+#standard{
+    position:absolute; top: 795px; left: 35px;
+}
+#modern{
+    position:absolute; top: 1045px; left: 235px;
+}
+#legacy{
+    position:absolute; top: 1295px; left: 35px;
+}
+#edh{
+    position:absolute; top: 1545px; left: 235px;
+}
+#paragraph4{
+    position:absolute; top: 700px; left: 50px;
+}
+#paragraph5{
+    position:absolute; top: 1800px; left: 50px;
+}
+#draft{
+    position:absolute; top: 1900px; left: 35px;
+}
+#sealed{
+    position:absolute; top: 2150px; left: 235px;
+}
