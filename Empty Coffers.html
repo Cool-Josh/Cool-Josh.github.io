@@ -92,7 +92,8 @@ To pay off this debt, you&#39;ll need to find work around the fief tomorrow.
 [[Gambling Den]]
 
 [[Steal from the nobles.]]
-]</tw-passagedata><tw-passagedata pid="4" name="Find work at the inn." tags="" position="864,553" size="100,100">(if: $workedinn &lt; 1) [
+]</tw-passagedata><tw-passagedata pid="4" name="Find work at the inn." tags="" position="864,553" size="100,100">&lt;img src=&quot;/graphics/inn.png&quot;&gt;
+(if: $workedinn &lt; 1) [
 Work at the inn is tedious, but the pay is consistent. There are also plenty of interesting individuals who frequent the establishment.
 
 While working, you meet a strange, hooded man. He sees that you&#39;re struggling financially, so he offers you his advice. First, he notifies you of an illegal gambling den in town. In addition, he mentions a family of nobles whose security is rather weak. He claims to have stolen thousands of gold from them without ever getting caught.
@@ -104,28 +105,32 @@ You dismiss his advice in the moment, but his suggestions could be a last resort
 You earned $earned gold for your work today.
 [[Head home.]]
 
-(set: $workedinn to 1)</tw-passagedata><tw-passagedata pid="5" name="Find work at the forge." tags="" position="1002,551" size="100,100">(if: $workedforge &lt; 1) [
+(set: $workedinn to 1)</tw-passagedata><tw-passagedata pid="5" name="Find work at the forge." tags="" position="1002,551" size="100,100">&lt;img src=&quot;/graphics/forge.jpg&quot;&gt;
+(if: $workedforge &lt; 1) [
 Work at the forge is physically taxing, but the pay is usually pretty good. 
 ]
 (set: $earned = (random:150,400))
 (set: $gold = $gold+$earned)
 You earned $earned gold for your work today.
 [[Head home.]]
-(set: $workedforge to 1)</tw-passagedata><tw-passagedata pid="6" name="Find work at the farms." tags="" position="1133,556" size="100,100">(if: $workedfarm &lt; 1) [
+(set: $workedforge to 1)</tw-passagedata><tw-passagedata pid="6" name="Find work at the farms." tags="" position="1133,556" size="100,100">&lt;img src=&quot;/graphics/farm.jpg&quot;&gt;
+(if: $workedfarm &lt; 1) [
 You&#39;re used to Farmwork, so it goes by pretty quickly. The pay isn&#39;t very consistent, but you have the chance to make a lot of money on a good day. 
 ]
 (set: $earned = (random:50,350))
 (set: $gold = $gold+$earned)
 You earned $earned gold for your work today.
 [[Head home.]]
-(set: $workedfarm to 1)</tw-passagedata><tw-passagedata pid="7" name="Find work at the fletchery." tags="" position="1265,557" size="100,100">(if: $workedfletch &lt; 1) [
+(set: $workedfarm to 1)</tw-passagedata><tw-passagedata pid="7" name="Find work at the fletchery." tags="" position="1265,557" size="100,100">&lt;img src=&quot;/graphics/fletch.jpg&quot;&gt;
+(if: $workedfletch &lt; 1) [
 The fletcher pays you for each arrow you complete. The work is unfamiliar to you, so you mess up frequently. On a good day, you stand to make a lot of money, but a bad day will leave you with close to nothing. 
 ]
 (set: $earned = (random:50,500))
 (set: $gold = $gold+$earned)
 You earned $earned gold for your work today.
 [[Head home.]]
-(set: $workedfletch to 1)</tw-passagedata><tw-passagedata pid="8" name="Head home." tags="" position="945,688" size="100,100">{
+(set: $workedfletch to 1)</tw-passagedata><tw-passagedata pid="8" name="Head home." tags="" position="945,688" size="100,100">&lt;img src=&quot;/graphics/home.jpg&quot;&gt;
+{
 	(if: $day &lt;= 0) [
 	[[Go to sleep for the night.]]
 	]
@@ -151,15 +156,18 @@ You earned $earned gold for your work today.
 
 The guards are notified of your pressence and promptly take you into their custody. 
 
-[[Go to jail.]]</tw-passagedata><tw-passagedata pid="10" name="Go to jail." tags="" position="552,895" size="100,100">You find youreslf locked behind bars for the forseeable future, however, you&#39;re not concerned about yourself. Without someone to provide for your family, it&#39;s unlikely they&#39;ll make it through the winter.
+[[Go to jail.]]</tw-passagedata><tw-passagedata pid="10" name="Go to jail." tags="" position="552,895" size="100,100">&lt;img src=&quot;/graphics/prison.jpg&quot;&gt;
+You find youreslf locked behind bars for the forseeable future, however, you&#39;re not concerned about yourself. Without someone to provide for your family, it&#39;s unlikely they&#39;ll make it through the winter.
 
 
 The End.
 
-[[Start]]</tw-passagedata><tw-passagedata pid="11" name="Event 1." tags="" position="776,713" size="100,100">Your coughing grows more violent. You&#39;re aware that you should probably go see the physician, but you&#39;re also aware that trips to physician are expensive. Perhaps it&#39;s better to just ignore the ailment and pray that it goes away on its own. 
+[[Start]]</tw-passagedata><tw-passagedata pid="11" name="Event 1." tags="" position="776,713" size="100,100">&lt;img src=&quot;/graphics/phys.jpg&quot;&gt;
+Your coughing grows more violent. You&#39;re aware that you should probably go see the physician, but you&#39;re also aware that trips to physician are expensive. Perhaps it&#39;s better to just ignore the ailment and pray that it goes away on its own. 
 
 [[Go see the physician|Pay]] or [[Ignore the cough.|Don&#39;t pay.]]
-</tw-passagedata><tw-passagedata pid="12" name="Event 2." tags="" position="1118,705" size="100,100">You come home to find your pantry barren. You need to buy more food for your family, but it will cost you. While agonizing, you could survive a week without food to save some money. However, your youngest child is already malnourished, so a week without food might put them at risk. 
+</tw-passagedata><tw-passagedata pid="12" name="Event 2." tags="" position="1118,705" size="100,100">&lt;img src=&quot;/graphics/food.jpg&quot;&gt;
+You come home to find your pantry barren. You need to buy more food for your family, but it will cost you. While agonizing, you could survive a week without food to save some money. However, your youngest child is already malnourished, so a week without food might put them at risk. 
 
 [[Buy food|Pay2]] or [[Starve for now.|Don&#39;t pay.2]]</tw-passagedata><tw-passagedata pid="13" name="Final sleep." tags="" position="943,981" size="100,100">The tribute collector arrived first thing in the morning with two guards accompanying him. 
 (if: $gold &gt;=0) [
@@ -217,7 +225,8 @@ You lost $cost gold.
 
 The End.
 
-[[Start]]</tw-passagedata><tw-passagedata pid="23" name="Event 0." tags="" position="1402,711" size="100,100">You get out of your carriage to find that one of your wheels has broken. You can get the carpenter to make you a new one, but it will cost gold. You can go without the carriage for now, but it will limit the places you&#39;re able to travel to find work. 
+[[Start]]</tw-passagedata><tw-passagedata pid="23" name="Event 0." tags="" position="1402,711" size="100,100">&lt;img src=&quot;/graphics/wheel.jpg&quot;&gt;
+You get out of your carriage to find that one of your wheels has broken. You can get the carpenter to make you a new one, but it will cost gold. You can go without the carriage for now, but it will limit the places you&#39;re able to travel to find work. 
 
 [[Get it fixed|Pay0]] or [[Go without it.|Don&#39;t pay.0]]</tw-passagedata><tw-passagedata pid="24" name="Pay0" tags="" position="1328,843" size="100,100">You decide that you can&#39;t do without your carriage. The replacement wheel cost more than you were expecting, but it&#39;s a necessary investment. 
 (set: $cost = (random:200,300))
